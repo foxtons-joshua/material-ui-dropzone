@@ -1,12 +1,12 @@
 {
-  "name": "react-mui-dropzone",
+  "name": "@foxtons/react-mui-dropzone",
   "version": "4.0.7",
   "description": "A Material-UI-v5 file-upload dropzone with react 18",
   "license": "MIT",
   "author": "Yuval",
   "repository": {
     "type": "git",
-    "url": "https://github.com/foxtons-joshua/material-ui-dropzone"
+    "url": "git+https://github.com/foxtons-joshua/material-ui-dropzone.git"
   },
   "keywords": [
     "react",
@@ -90,5 +90,12 @@
     "rollup-plugin-size-snapshot": "^0.11.0",
     "webpack": "^5.57.1"
   },
-  "packageManager": "pnpm@9.12.3+sha512.cce0f9de9c5a7c95bef944169cc5dfe8741abfb145078c0d508b868056848a87c81e626246cb60967cbd7fd29a6c062ef73ff840d96b3c86c40ac92cf4a813ee"
+  "packageManager": "pnpm@9.12.3+sha512.cce0f9de9c5a7c95bef944169cc5dfe8741abfb145078c0d508b868056848a87c81e626246cb60967cbd7fd29a6c062ef73ff840d96b3c86c40ac92cf4a813ee",
+  "directories": {
+    "doc": "docs"
+  },
+  "bugs": {
+    "url": "https://github.com/foxtons-joshua/material-ui-dropzone/issues"
+  },
+  "homepage": "https://github.com/foxtons-joshua/material-ui-dropzone#readme"
 }
