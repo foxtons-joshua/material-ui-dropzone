@@ -11,13 +11,13 @@ module.exports = {
   plugins: [
     'babel-plugin-optimize-clsx',
     [
-      '@babel/plugin-proposal-class-properties',
+      '@babel/plugin-transform-class-properties',
       {
         loose: true,
       },
     ],
     [
-      '@babel/plugin-proposal-object-rest-spread',
+      '@babel/plugin-transform-object-rest-spread',
       {
         loose: true,
       },

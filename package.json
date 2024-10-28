@@ -26,17 +26,15 @@
   ],
   "engines": {
     "node": ">=8",
-    "yarn": ">=1"
+    "pnpm": ">=9"
   },
   "scripts": {
     "lint": "eslint src/",
     "lint:fix": "eslint src/ --fix",
     "build": "rollup -c",
     "start": "rollup -c -w",
-    "prepare": "yarn build",
     "docs:dev": "styleguidist server",
     "docs:build": "styleguidist build",
-    "predocs:deploy": "yarn docs:build",
     "docs:deploy": "gh-pages -d styleguide"
   },
   "dependencies": {
@@ -56,9 +54,10 @@
   },
   "devDependencies": {
     "@babel/core": "^7.10.2",
-    "@babel/plugin-proposal-class-properties": "^7.10.1",
-    "@babel/plugin-proposal-object-rest-spread": "^7.10.1",
+    "@babel/eslint-parser": "^7.25.9",
+    "@babel/plugin-transform-class-properties": "^7.25.9",
     "@babel/plugin-transform-object-assign": "^7.10.1",
+    "@babel/plugin-transform-object-rest-spread": "^7.25.9",
     "@babel/plugin-transform-react-constant-elements": "^7.10.1",
     "@babel/plugin-transform-runtime": "^7.10.1",
     "@babel/preset-env": "^7.10.2",
@@ -68,9 +67,9 @@
     "@mui/icons-material": "^5.0.1",
     "@mui/material": "^5.0.2",
     "@mui/styles": "^6.1.5",
+    "@rollup/plugin-babel": "^6.0.4",
     "@rollup/plugin-commonjs": "^11.0.2",
     "@rollup/plugin-node-resolve": "^7.1.1",
-    "babel-eslint": "^10.1.0",
     "babel-loader": "^8.1.0",
     "babel-plugin-optimize-clsx": "^2.6.0",
     "babel-plugin-transform-dev-warning": "^0.1.1",
@@ -83,7 +82,6 @@
     "react-dom": "^18.3.1",
     "react-styleguidist": "^13.1.3",
     "rollup": "^1.32.0",
-    "rollup-plugin-babel": "^4.4.0",
     "rollup-plugin-cpy": "^2.0.1",
     "rollup-plugin-peer-deps-external": "2.2.2",
     "rollup-plugin-size-snapshot": "^0.11.0",

@@ -1,6 +1,6 @@
 import commonjs from '@rollup/plugin-commonjs';
 import resolve from '@rollup/plugin-node-resolve';
-import babel from 'rollup-plugin-babel';
+import babel from '@rollup/plugin-babel';
 import copy from 'rollup-plugin-cpy';
 import external from 'rollup-plugin-peer-deps-external';
 import { sizeSnapshot } from 'rollup-plugin-size-snapshot';
