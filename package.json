@@ -1,12 +1,12 @@
 {
-  "name": "react-mui-dropzone",
+  "name": "react-mui-dropzone-v18",
   "version": "4.0.7",
-  "description": "A Material-UI-v5 file-upload dropzone",
+  "description": "A Material-UI-v5 file-upload dropzone with react 18",
   "license": "MIT",
   "author": "Yuval",
   "repository": {
     "type": "git",
-    "url": "https://github.com/lifeeric/material-ui-dropzone"
+    "url": "https://github.com/foxtons-joshua/material-ui-dropzone"
   },
   "keywords": [
     "react",
