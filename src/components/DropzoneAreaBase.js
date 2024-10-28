@@ -135,7 +135,7 @@ class DropzoneAreaBase extends React.PureComponent {
             snackbarMessage: message,
             snackbarVariant: 'success',
         }, this.notifyAlert);
-    }
+    };
 
     handleDropRejected = (rejectedFiles, evt) => {
         const {
@@ -166,7 +166,7 @@ class DropzoneAreaBase extends React.PureComponent {
             snackbarMessage: message,
             snackbarVariant: 'error',
         }, this.notifyAlert);
-    }
+    };
 
     handleRemove = (fileIndex) => (event) => {
         event.stopPropagation();

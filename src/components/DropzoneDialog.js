@@ -16,7 +16,7 @@ import DropzoneDialogBase from './DropzoneDialogBase';
 class DropzoneDialog extends React.PureComponent {
     state = {
         fileObjects: [],
-    }
+    };
 
     componentDidMount() {
         this.loadInitialFiles();
@@ -39,7 +39,7 @@ class DropzoneDialog extends React.PureComponent {
         if (onChange) {
             onChange(fileObjects.map((fileObject) => fileObject.file));
         }
-    }
+    };
 
     loadInitialFiles = async() => {
         const {initialFiles} = this.props;
@@ -70,7 +70,7 @@ class DropzoneDialog extends React.PureComponent {
         } catch (err) {
             console.log(err);
         }
-    }
+    };
 
     addFiles = async(newFileObjects) => {
         const {filesLimit} = this.props;
@@ -91,7 +91,7 @@ class DropzoneDialog extends React.PureComponent {
                 ),
             };
         }, this.notifyFileChange);
-    }
+    };
 
     deleteFile = (removedFileObj, removedFileObjIdx) => {
         event.stopPropagation();
@@ -113,7 +113,7 @@ class DropzoneDialog extends React.PureComponent {
         this.setState({
             fileObjects: remainingFileObjs,
         }, this.notifyFileChange);
-    }
+    };
 
     handleClose = (evt) => {
         const {clearOnUnmount, onClose} = this.props;
@@ -127,7 +127,7 @@ class DropzoneDialog extends React.PureComponent {
                 fileObjects: [],
             }, this.notifyFileChange);
         }
-    }
+    };
 
     handleSave = (evt) => {
         const {clearOnUnmount, onSave} = this.props;
@@ -142,7 +142,7 @@ class DropzoneDialog extends React.PureComponent {
                 fileObjects: [],
             }, this.notifyFileChange);
         }
-    }
+    };
 
     render() {
         const {fileObjects} = this.state;

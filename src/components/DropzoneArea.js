@@ -20,7 +20,7 @@ const splitDropzoneAreaProps = (props) => {
 class DropzoneArea extends React.PureComponent {
     state = {
         fileObjects: [],
-    }
+    };
 
     componentDidMount() {
         this.loadInitialFiles();
@@ -43,7 +43,7 @@ class DropzoneArea extends React.PureComponent {
         if (onChange) {
             onChange(fileObjects.map((fileObject) => fileObject.file));
         }
-    }
+    };
 
     loadInitialFiles = async() => {
         const {initialFiles} = this.props;
@@ -74,7 +74,7 @@ class DropzoneArea extends React.PureComponent {
         } catch (err) {
             console.log(err);
         }
-    }
+    };
 
     addFiles = async(newFileObjects) => {
         const {filesLimit} = this.props;
@@ -95,7 +95,7 @@ class DropzoneArea extends React.PureComponent {
                 ),
             };
         }, this.notifyFileChange);
-    }
+    };
 
     deleteFile = (removedFileObj, removedFileObjIdx) => {
         event.stopPropagation();
@@ -117,7 +117,7 @@ class DropzoneArea extends React.PureComponent {
         this.setState({
             fileObjects: remainingFileObjs,
         }, this.notifyFileChange);
-    }
+    };
 
     render() {
         const [, dropzoneAreaProps] = splitDropzoneAreaProps(this.props);
