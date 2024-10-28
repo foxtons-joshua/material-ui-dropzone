@@ -83,6 +83,6 @@ SnackbarContentWrapper.propTypes = {
     variant: PropTypes.oneOf(['success', 'warning', 'error', 'info']).isRequired,
 };
 
-SnackbarContentWrapper.displayName  = "SnackbarContentWrapper";
+SnackbarContentWrapper.displayName = 'SnackbarContentWrapper';
 
 export default withStyles(styles, {name: 'MuiDropzoneSnackbar'})(SnackbarContentWrapper);
