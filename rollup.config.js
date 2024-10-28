@@ -28,7 +28,7 @@ export default {
     babel({
       exclude: /node_modules/,
       // We are using @babel/plugin-transform-runtime
-      runtimeHelpers: true,
+      babelHelpers: 'runtime',
     }),
     copy({
       files: ['src/index.d.ts'],

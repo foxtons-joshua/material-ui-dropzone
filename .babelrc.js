@@ -10,18 +10,8 @@ module.exports = {
   ],
   plugins: [
     'babel-plugin-optimize-clsx',
-    [
-      '@babel/plugin-transform-class-properties',
-      {
-        loose: true,
-      },
-    ],
-    [
-      '@babel/plugin-transform-object-rest-spread',
-      {
-        loose: true,
-      },
-    ],
+    '@babel/plugin-transform-class-properties',
+    '@babel/plugin-transform-object-rest-spread',
     // any package needs to declare 7.4.4 as a runtime dependency. default is ^7.0.0
     [
       '@babel/plugin-transform-runtime',
