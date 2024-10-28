@@ -17,5 +17,24 @@
         "code": 21871
       }
     }
+  },
+  "dist\\index.js": {
+    "bundled": 60609,
+    "minified": 28530,
+    "gzipped": 6481
+  },
+  "dist\\index.es.js": {
+    "bundled": 59429,
+    "minified": 27529,
+    "gzipped": 6376,
+    "treeshaked": {
+      "rollup": {
+        "code": 18776,
+        "import_statements": 1629
+      },
+      "webpack": {
+        "code": 22324
+      }
+    }
   }
 }
