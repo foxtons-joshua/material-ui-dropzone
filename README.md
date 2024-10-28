@@ -1,11 +1,9 @@
 # react-mui-dropzone Support @mui-5
 
-> (Unofficial published in order to support @mui/material 5) React-Mui-dropzone is a [React](https://github.com/facebook/react) component using [Material-UI](https://github.com/mui-org/material-ui) and is based on the excellent [react-dropzone](https://github.com/react-dropzone/react-dropzone) library.
+> (Unofficial published in order to support @mui/material 5 with React 18+) React-Mui-dropzone is a [React](https://github.com/facebook/react) component using [Material-UI](https://github.com/mui-org/material-ui) and is based on the excellent [react-dropzone](https://github.com/react-dropzone/react-dropzone) library.
 
 [![License](https://img.shields.io/github/license/yuvaleros/material-ui-dropzone)](https://github.com/Yuvaleros/material-ui-dropzone/blob/master/LICENSE) <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->[![All Contributors](https://img.shields.io/badge/all_contributors-9-orange.svg)](#contributors)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
-
-[![Rebuild Dist Workflow Status](https://img.shields.io/github/workflow/status/yuvaleros/material-ui-dropzone/Rebuild%20Dist?label=build)](https://github.com/Yuvaleros/material-ui-dropzone/actions?query=workflow%3A%22Rebuild+Dist%22) [![Update Docs Workflow Status](https://img.shields.io/github/workflow/status/yuvaleros/material-ui-dropzone/Update%20Docs?label=docs)](https://github.com/Yuvaleros/material-ui-dropzone/actions?query=workflow%3A%22Update+Docs%22)
 
 [![npm package](https://img.shields.io/npm/v/material-ui-dropzone)](https://www.npmjs.com/package/react-mui-dropzone) [![npm downloads](https://img.shields.io/npm/dm/material-ui-dropzone.svg)](https://www.npmjs.com/package/react-mui-dropzone)
 
@@ -31,6 +29,7 @@ yarn add react-mui-dropzone
 
 | version | React            | Material-UI    |
 | ------- | ---------------- | -------------- |
+| `4.x`   | `18+`            | `5.x`          |
 | `4.x`   | `17+`            | `5.x`          |
 | `3.x`   | `16.8+`          | `4.x`          |
 | `2.x`   | `15.x` or `16.x` | `3.x` or `4.x` |
